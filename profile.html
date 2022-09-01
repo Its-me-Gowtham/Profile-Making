@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <style>
+       label {
+    width:470px;
+  padding: 12px 12px 12px 0px;
+  display: inline-block;
+}
+    </style>
+</head>
+<body style="background-image:url(https://www.pngmagic.com/product_images/responsive-website-banner-design.jpg);background-repeat:no-repeat;background-size: cover;">
+    <h1 style="text-align:center;font-family:Georgia, 'Times New Roman', Times, serif">Profile</h1>
+    
+    <form action="index.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name"><br><br>
+        <label for="dob">Date Of Birth:</label>
+        <input type="date" name="dob" id="dob"><br><br>
+        <label for="graduation_year">Graduation Year</label>
+        <select name="graduation_year" id="graduation_year">
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+        </select><br><br>
+        <label for="mother_name">Mother Name:</label>
+        <input type="text" name="mother_name" id="mother_name"><br><br>
+        <label for="father_name">Father Name:</label>
+        <input type="text" name="father_name" id="father_name"><br><br>
+        <label for="email_id">Email Id:</label>
+        <input  type="email" name="email_id" id="email_id"><br><br>
+        <label for="contact_no">Mobile Number:</label>
+        <input type="tel" name="contact_no" id="contact_no" placeholder="12345 23456" pattern="[0-9]{5} [0-9]{5}" required><br><br>
+        <label for="SSLC_percentage">SSLC percentage:</label>
+        <input type="text" name="SSLC_percentage" id="SSLC_percentage"><br><br>
+        <label for="sslc-institution">Institution:</label>
+        <input type="text" name="sslc-institution" id="sslc-institution"><br><br>
+        <label for="sslc-board">board:</label>
+        <input type="text" name="sslc-board" id="sslc-board"><br><br>
+
+        <label for="HSC/Diploma">HSC percentage/Diploma percentage:</label>
+        <input type="text" name="HSC/Diploma" id="HSC/Diploma"><br><br>
+        <label for="hsc-institution">Institution:</label>
+        <input type="text" name="hsc-institution" id="hsc-institution"><br><br>
+        <label for="hsc-board">board:</label>
+        <input type="text" name="hsc-board" id="hsc-board"><br><br>
+
+        <label for="eng-percentage">Engineering Percentage:</label>
+        <input type="number" name="eng-percentage" id="eng-percentage"><br><br>
+        <label for="college_name">College Name:</label>
+        <input type="text" name="college_name" id="college_name"><br><br>
+
+        <label for="branch" >Branch:</label>
+        <select name="branch" id="branch">
+            <option value="ECE">ECE</option>
+            <option value="EEE">EEE</option>
+            <option value="CSE">CSE</option>
+            <option value="CIVIL">CIVIL</option>
+            <option value="IT">IT</option>
+            <option value="MECH">MECH</option>
+        </select><br><br>
+        <label for="experience" >Experience:</label>
+        <input type="number" id="experience" name="experience"><br><br>
+        <label for="patents">Patents(if any):</label>
+        <input type="text" name="patents" id="patents"><br><br>
+        <label for="innovative_ideas">Innovative ideas:</label>
+        <input type="text" name="innovative_ideas" id="innovative_ideas"><br><br>
+
+        <label for="intern-period">Internship period:</label>
+        <select name="intern-period" id="intern_period">
+            <option value="L-1">Internship(L-1 month)</option>
+            <option value="L-1">Internship(XL-2 month)</option>
+            <option value="L-1">Internship(XXL-3 month)</option>
+        </select><br><br>
+        <label for="tech_skill_basic">Technical-skill(Technology/Software/Tool)-Basic Working knowledge:</label>
+        <input type="text" name="tech_skill_basic" id="tech_skill_basic"><br><br>
+
+        <label for="tech_skill_intermediate">Technical-skill(Technology/Software/Tool)-Intermediate Working knowledge:</label>
+        <input type="text" name="tech_skill_intermediate" id="tech_skill_intermediate"><br><br>
+
+        <label for="tech_skill_expert">Technical-skill(Technology/Software/Tool)-Expert Working knowledge:</label>
+        <input type="text" name="tech_skill_expert" id="tech_skill_expert"><br><br>
+
+        <label for="course_certifications_xs">Courses/Certifications/Design/Application (XS - 2 days):</label>
+        <input type="text" name="course_certifications_xs" id="course_certifications_xs"><br><br>
+
+        <label for="course_certifications_s">Courses/Certifications/Design/Application (S - 1 week):</label>
+        <input type="text" name="course_certifications_s" id="course_certifications_s"><br><br>
+
+        <label for="course_certifications_m">Courses/Certifications/Design/Application (M - 2 weeks):</label>
+        <input type="text" name="course_certifications_m" id="course_certifications_m"><br><br>
+
+        <label for="course_certifications_l">Courses/Certifications/Design/Application (L - 1 month):</label>
+        <input type="text" name="course_certifications_l" id="course_certifications_l"><br><br>
+
+        <label for="course_certifications_xl">Courses/Certifications/Design/Application (XL - 2 months):</label>
+        <input type="text" name="course_certifications_xl" id="course_certifications_xl"><br><br>
+
+        <label for="course_certifications_xxl">Courses/Certifications/Design/Application (XXL - 3 months):</label>
+        <input type="text" name="course_certifications_xxl" id="course_certifications_xxl"><br><br>
+
+        <label for="Journals/Presentations_intra">Journals/Presentations (Intra College/Online):</label>
+        <select name="Journals/Presentations_intra" id="Journals/Presentations_intra">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br><br>
+
+        <label for="Journals/Presentations_inter">Journals/Presentations (Inter College - Zonal/District Level):</label>
+        <select name="Journals/Presentations_inter" id="Journals/Presentations_inter">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br><br>
+
+        <label for="Journals/Presentations_state">Journals/Presentations (State Level):</label>
+        <select name="Journals/Presentations_state" id="Journals/Presentations_state">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br><br>
+
+        <label for="Journals/Presentations_national">Journals/Presentations (National Level):</label>
+        <select name="Journals/Presentations_national" id="Journals/Presentations_national">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br><br>
+
+        <label for="Events/Workshops_intra">Events/Workshops (Intra College/Online):</label>
+        <select name="Events/Workshops_intra" id="Events/Workshops_intra">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br><br>
+
+        <label for="Events/Workshops_inter">Events/Workshops (Inter College - Zonal/District Level):</label>
+        <select name="Events/Workshops_inter" id="Events/Workshops_inter">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br><br>
+        
+        <label for="Events/Workshops_state">Events/Workshops (state Level):</label>
+        <select name="Events/Workshops_state" id="Events/Workshops_state">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br><br>
+
+        <label for="Events/Workshops_national">Events/Workshops (National Level):</label>
+        <select name="Events/Workshops_national" id="Events/Workshops_national">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select> <br><br>
+
+        <label for="Events/Workshops_international">Events/Workshops (International Level):</label>
+        <select name="Events/Workshops_international" id="Events/Workshops_international">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br><br>
+
+        <label for="school_leader">School Pupil Leader:</label>
+        <select name="school_leader" id="school_leader">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br><br>
+
+        <label for="rep_college">Class Representative at Diploma/College:</label>
+        <select name="rep_college" id="rep_college">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br><br>
+
+        <label>Hobbies/Unique talents:</label>
+        <input type="text" name="hobbies" id="hobbies"><br><br>
+        <label for="indian_lang">Indian Language (other than mother tongue):</label>
+        <input type="text" name="indian_lang" id="indian_lang"><br><br>
+
+        <label for="euro_lang">European/Global Languages (Other than English):</label>
+        <input type="text" name="euro_lang" id="euro_lang"><br><br>
+
+        <label for="asian_lang">Asian Languages :</label>
+        <select name="asian_lang" id="asian_lang">
+            <option value="Russian">Russian</option>
+            <option value="Chinese">Chinese</option>
+            <option value="Japanese">Japanese</option>
+            <option value="Korean">Korean</option>
+        </select><br><br>
+    <input type="submit" value="Submit"style="margin-left:540px">
+    </form>
+    <!-- <button type="submit" name="submit" style="margin-left:540px">Submit</button> -->
+    <!-- <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button> -->
+</body>
+</html>
